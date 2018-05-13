@@ -1,0 +1,8 @@
+<input type="text" placeholder="請輸入代辦事項..." [(ngModel)]="itemValue">
+<button (click)="sendAddItem()">確定</button>
+<br />
+<div>
+  <span>事項總數:{{listData.length}}</span>
+  <span>目前完成:{{itemState.done}}</span>
+  <span>待完成:{{itemState.unfinished}}</span>
+</div>

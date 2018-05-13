@@ -1,0 +1,3 @@
+<h2>TodoList</h2>
+<app-todo-list-header [listData]="listData" [itemState]="itemState" (addItem)="addItem($event)"></app-todo-list-header>
+<app-todo-list-body [listData]="listData" (doneItem)="doneItem($event)" (deleteItem)="deleteItem($event)"></app-todo-list-body>

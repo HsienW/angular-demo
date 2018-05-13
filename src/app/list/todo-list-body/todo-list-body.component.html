@@ -1,0 +1,10 @@
+<ng-container>
+  <ul>
+    <li *ngFor="let item of listData" >
+      <input class="done" type="checkbox" [checked]="item.state" (change)="sendDoneItem(item.title)">
+      <span>項目: {{item.title}}</span>
+      <span>日期: {{item.time}}</span>
+      <button (click)="sendDelete(item.title)">delete</button>
+    </li>
+  </ul>
+</ng-container>
